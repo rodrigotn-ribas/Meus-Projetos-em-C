@@ -15,7 +15,7 @@ int main(){
 		printf("Selecione uma forma de conversao:\n");
 		scanf("%d", &opcao);
 		
-		switch(opcao){
+		switch(opcao){// O switch funciona apartir de uma variavel opcao que seleciona qual case selecionar.
 		printf("Digite um valor em metros: ");
 		scanf("%f", &valor_M);
 			case 1:
