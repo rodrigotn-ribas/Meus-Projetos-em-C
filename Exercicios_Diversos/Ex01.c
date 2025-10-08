@@ -28,16 +28,16 @@ int main(){
 	for(i=0;i<5;i++){
 		printf("Nota %d: ", i+1);
 		scanf("%f", &notas[i]);
-		soma += notas[i];
+		soma += notas[i]; //Aqui ele soma recebe soma o valor da nota no espaco i 
 	}
 	
 	media = soma/5;
 	
-	printf("Media do aluno: %.2f\n\n", media);
+	printf("Media do aluno: %.1f\n\n", media);
 	printf("Notas acima da media\n");
 	for(i=0;i<5;i++){
 		if(notas[i] > 6){
-			printf("Nota %d: %.2f\n", i+1, notas[i]);
+			printf("Nota %d: %.1f\n", i+1, notas[i]);
 		}
 	}
 }
